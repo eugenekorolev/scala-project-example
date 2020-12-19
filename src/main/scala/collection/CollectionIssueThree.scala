@@ -1,3 +1,4 @@
+package collection
 
 /**
  * Считать из файла hdata_stock.csv данные в буфер
@@ -5,7 +6,7 @@
  * Вывести построчно в консоль считанные полученный результат
  */
 
-object CollectionExampleOne {
+object CollectionIssueThree {
 
   def main(args: Array[String]): Unit = {
 

@@ -1,6 +1,0 @@
-
-/**
- * 
- * */
-
-case object CollectionExampleFour

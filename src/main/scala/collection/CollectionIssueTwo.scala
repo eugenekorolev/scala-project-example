@@ -1,4 +1,6 @@
-object CollectionExampleTwo {
+package collection
+
+object CollectionIssueTwo {
 
   /**
    * Создать функцию, принимающую два числа,
@@ -21,15 +23,13 @@ object CollectionExampleTwo {
          j <- i until n if i + j == v)
       yield (i, j)
 
-  def foo1(n: Int, v: Int): _root_.scala.collection.immutable.IndexedSeq[Tuple2[Int, Int]] = {
-    var sequ : IndexedSeq[Tuple2[Int, Int]] = ???
-    sequ = (Predef.intWrapper(0).until(n))
+  def foo1(n: Int, v: Int): _root_.scala.collection.immutable.IndexedSeq[(Int, Int)] = {
+    (Predef.intWrapper(0).until(n))
       .flatMap((i: Int) =>
         (Predef.intWrapper(i).until(n))
           .withFilter((j: Int) => i.+(j).==(v))
           .map((j: Int) => Tuple2.apply(i, j))
       )
-    sequ
   }
 
 
